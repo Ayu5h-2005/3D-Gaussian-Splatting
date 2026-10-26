@@ -1,0 +1,34 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Cache and temporary files
+.pytest_cache/
+.mypy_cache/
+.streamlit/secrets.toml
+*.tmp
+*.bak
+
+# Large experiment outputs — review before committing
+# results/benchmarks/
+# results/checkpoints/
+# results/large_datasets/

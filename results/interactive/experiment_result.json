@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "environment": {
+    "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "pytorch_version": "2.4.1+cu121",
+    "gsplat_version": "1.5.3+pt24cu124",
+    "resolution": "512x512",
+    "tile_size": 16,
+    "total_tiles": 1024
+  },
+  "perturbation": {
+    "mode": "spatial_cluster",
+    "num_total_gaussians": 10000,
+    "num_changed_gaussians": 100,
+    "pct_changed_gaussians": 1.0,
+    "delta": [
+      0.15,
+      -0.1,
+      0.05
+    ],
+    "seed": 42,
+    "changed_indices_sample": [
+      5026,
+      5073,
+      5122,
+      5164,
+      5227,
+      5267,
+      5272,
+      5283,
+      5313,
+      5369
+    ]
+  },
+  "static_dynamic_partition": {
+    "num_total_gaussians": 10000,
+    "num_static_gaussians": 9900,
+    "num_dynamic_gaussians": 100,
+    "pct_static_reused": 99.0,
+    "pct_dynamic_recomputed": 1.0,
+    "projection_work_reduction_pct": 99.0,
+    "cache_valid": true
+  },
+  "tiles": {
+    "tile_size": 16,
+    "grid_resolution": [
+      32,
+      32
+    ],
+    "total_tiles": 1024,
+    "invalid_tile_count": 34,
+    "clean_tile_count": 990,
+    "invalid_tile_percentage": 3.32,
+    "clean_tile_percentage": 96.68,
+    "gt_changed_tiles": 12,
+    "zero_false_negatives": true,
+    "recall": 1.0,
+    "precision": 0.3529,
+    "false_negatives": 0
+  },
+  "latencies_ms": {
+    "t_full_render_med": 4.7677,
+    "t_full_render_std": 0.52,
+    "t_full_render_cpu_wall_med": 4.9635,
+    "t_dynamic_projection_med": 1.1059,
+    "t_dynamic_projection_std": 0.2001,
+    "t_invalidation_med": 2.2108,
+    "t_invalidation_std": 0.799,
+    "t_buffer_update_med": 1.0363,
+    "t_buffer_update_std": 0.6516,
+    "t_isect_tiles_med": 2.9921,
+    "t_isect_tiles_std": 1.2545,
+    "t_isect_offset_encode_med": 0.4895,
+    "t_isect_offset_encode_std": 0.0858,
+    "t_raster_full_med": 2.4545,
+    "t_raster_full_std": 0.1405,
+    "t_raster_masked_med": 0.8561,
+    "t_raster_masked_std": 0.1808,
+    "t_composite_med": 0.3748,
+    "t_composite_std": 0.0595,
+    "t_buffer_reset_med": 0.8632,
+    "t_buffer_reset_std": 0.1079,
+    "t_stages_sum_med": 9.9287,
+    "t_incremental_pipeline_med": 10.7786,
+    "t_incremental_pipeline_std": 4.6085,
+    "t_incremental_cpu_wall_med": 12.8012,
+    "t_steady_state_incremental_med": 5.207,
+    "t_steady_state_incremental_std": 0.7315,
+    "t_steady_state_cpu_wall_med": 5.3799,
+    "cache_setup_ms": 7.819,
+    "raster_kernel_speedup": 2.87,
+    "end_to_end_ratio": 0.44,
+    "steady_state_ratio": 0.92,
+    "timing_discrepancy_resolved": true,
+    "discrepancy_explanation": "In Milestone 2B, latencies_ms omitted isect_tiles (~0.61 ms), isect_offset_encode (~0.11 ms), buffer reset (~0.40 ms), and inter-kernel queue dispatch (~0.28 ms). In Milestone 2C, all stages are fully audited and accounted for."
+  },
+  "fidelity": {
+    "max_abs_error": 0.0,
+    "l1_error": 0.0,
+    "mse": 0.0,
+    "psnr_db": "inf",
+    "ssim": 1.0
+  },
+  "image_paths": {
+    "original_render": "D:\\3dgs-incremental-research\\results\\interactive\\original_render.png",
+    "modified_render": "D:\\3dgs-incremental-research\\results\\interactive\\modified_render.png",
+    "diff_heatmap": "D:\\3dgs-incremental-research\\results\\interactive\\diff_heatmap.png",
+    "invalidation_tile_mask": "D:\\3dgs-incremental-research\\results\\interactive\\invalidation_tile_mask.png",
+    "gt_tiles_overlay": "D:\\3dgs-incremental-research\\results\\interactive\\gt_tiles_overlay.png",
+    "composite_render": "D:\\3dgs-incremental-research\\results\\interactive\\composite_render.png"
+  }
+}

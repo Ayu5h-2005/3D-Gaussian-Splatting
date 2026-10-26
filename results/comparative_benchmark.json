@@ -1,0 +1,554 @@
+[
+  {
+    "config_name": "Sample PLY Pair (5k vs 5.05k)",
+    "scene_a_count": 5000,
+    "scene_b_count": 5050,
+    "classification": {
+      "gt_static": 4851,
+      "gt_modified": 49,
+      "gt_removed": 100,
+      "gt_added": 150,
+      "det_static": 4851,
+      "det_modified": 49,
+      "det_removed": 100,
+      "det_added": 150,
+      "static_recall": 1.0,
+      "modified_recall": 1.0
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 471,
+      "clean_tiles": 553,
+      "dirty_percentage": 46.0,
+      "clean_percentage": 54.0,
+      "gt_changed_tiles": 371,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 1.883,
+        "mean_ms": 2.161,
+        "p95_ms": 3.551
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 17.392,
+        "mean_ms": 18.877,
+        "p95_ms": 24.72
+      },
+      "c3_ref_incremental": {
+        "median_ms": 1.655,
+        "mean_ms": 1.781,
+        "p95_ms": 2.772
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 21.347,
+        "mean_ms": 23.077,
+        "p95_ms": 33.66
+      },
+      "stage_detect": {
+        "median_ms": 17.237,
+        "mean_ms": 17.921,
+        "p95_ms": 24.252
+      },
+      "stage_inval": {
+        "median_ms": 1.722,
+        "mean_ms": 1.725,
+        "p95_ms": 2.207
+      },
+      "speedup_c3_vs_c1": 1.14,
+      "speedup_c4_vs_c1": 0.09
+    },
+    "peak_vram_mb": 238.01
+  },
+  {
+    "config_name": "5k Scene (1% Spatial Cluster)",
+    "scene_a_count": 5000,
+    "scene_b_count": 5000,
+    "classification": {
+      "gt_static": 4950,
+      "gt_modified": 50,
+      "gt_removed": 0,
+      "gt_added": 0,
+      "det_static": 4950,
+      "det_modified": 48,
+      "det_removed": 2,
+      "det_added": 2,
+      "static_recall": 1.0,
+      "modified_recall": 0.96
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 57,
+      "clean_tiles": 967,
+      "dirty_percentage": 5.57,
+      "clean_percentage": 94.43,
+      "gt_changed_tiles": 23,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 1.871,
+        "mean_ms": 1.87,
+        "p95_ms": 2.603
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 19.245,
+        "mean_ms": 19.31,
+        "p95_ms": 22.186
+      },
+      "c3_ref_incremental": {
+        "median_ms": 1.623,
+        "mean_ms": 1.67,
+        "p95_ms": 1.961
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 20.982,
+        "mean_ms": 21.124,
+        "p95_ms": 23.511
+      },
+      "stage_detect": {
+        "median_ms": 17.202,
+        "mean_ms": 17.297,
+        "p95_ms": 20.482
+      },
+      "stage_inval": {
+        "median_ms": 2.275,
+        "mean_ms": 2.431,
+        "p95_ms": 3.271
+      },
+      "speedup_c3_vs_c1": 1.15,
+      "speedup_c4_vs_c1": 0.09
+    },
+    "peak_vram_mb": 300.27
+  },
+  {
+    "config_name": "5k Scene (5% Spatial Cluster)",
+    "scene_a_count": 5000,
+    "scene_b_count": 5000,
+    "classification": {
+      "gt_static": 4750,
+      "gt_modified": 250,
+      "gt_removed": 0,
+      "gt_added": 0,
+      "det_static": 4750,
+      "det_modified": 223,
+      "det_removed": 27,
+      "det_added": 27,
+      "static_recall": 1.0,
+      "modified_recall": 0.892
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 128,
+      "clean_tiles": 896,
+      "dirty_percentage": 12.5,
+      "clean_percentage": 87.5,
+      "gt_changed_tiles": 92,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 1.402,
+        "mean_ms": 1.439,
+        "p95_ms": 1.803
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 17.713,
+        "mean_ms": 19.629,
+        "p95_ms": 28.178
+      },
+      "c3_ref_incremental": {
+        "median_ms": 1.754,
+        "mean_ms": 1.756,
+        "p95_ms": 2.199
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 21.151,
+        "mean_ms": 23.375,
+        "p95_ms": 31.934
+      },
+      "stage_detect": {
+        "median_ms": 16.023,
+        "mean_ms": 16.344,
+        "p95_ms": 18.904
+      },
+      "stage_inval": {
+        "median_ms": 2.216,
+        "mean_ms": 2.177,
+        "p95_ms": 3.123
+      },
+      "speedup_c3_vs_c1": 0.8,
+      "speedup_c4_vs_c1": 0.07
+    },
+    "peak_vram_mb": 300.27
+  },
+  {
+    "config_name": "10k Scene (1% Spatial Cluster)",
+    "scene_a_count": 10000,
+    "scene_b_count": 10000,
+    "classification": {
+      "gt_static": 9900,
+      "gt_modified": 100,
+      "gt_removed": 0,
+      "gt_added": 0,
+      "det_static": 9900,
+      "det_modified": 92,
+      "det_removed": 8,
+      "det_added": 8,
+      "static_recall": 1.0,
+      "modified_recall": 0.92
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 61,
+      "clean_tiles": 963,
+      "dirty_percentage": 5.96,
+      "clean_percentage": 94.04,
+      "gt_changed_tiles": 2,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 2.91,
+        "mean_ms": 3.049,
+        "p95_ms": 4.798
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 39.515,
+        "mean_ms": 43.003,
+        "p95_ms": 57.263
+      },
+      "c3_ref_incremental": {
+        "median_ms": 3.107,
+        "mean_ms": 4.222,
+        "p95_ms": 10.684
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 40.588,
+        "mean_ms": 43.697,
+        "p95_ms": 61.346
+      },
+      "stage_detect": {
+        "median_ms": 36.212,
+        "mean_ms": 39.266,
+        "p95_ms": 49.26
+      },
+      "stage_inval": {
+        "median_ms": 1.704,
+        "mean_ms": 1.776,
+        "p95_ms": 2.477
+      },
+      "speedup_c3_vs_c1": 0.94,
+      "speedup_c4_vs_c1": 0.07
+    },
+    "peak_vram_mb": 992.92
+  },
+  {
+    "config_name": "25k Scene (1% Spatial Cluster)",
+    "scene_a_count": 25000,
+    "scene_b_count": 25000,
+    "classification": {
+      "gt_static": 24750,
+      "gt_modified": 250,
+      "gt_removed": 0,
+      "gt_added": 0,
+      "det_static": 24750,
+      "det_modified": 207,
+      "det_removed": 43,
+      "det_added": 43,
+      "static_recall": 1.0,
+      "modified_recall": 0.828
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 64,
+      "clean_tiles": 960,
+      "dirty_percentage": 6.25,
+      "clean_percentage": 93.75,
+      "gt_changed_tiles": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 2.184,
+        "mean_ms": 2.235,
+        "p95_ms": 3.086
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 190.249,
+        "mean_ms": 193.264,
+        "p95_ms": 202.964
+      },
+      "c3_ref_incremental": {
+        "median_ms": 1.767,
+        "mean_ms": 1.817,
+        "p95_ms": 2.506
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 194.982,
+        "mean_ms": 198.557,
+        "p95_ms": 216.716
+      },
+      "stage_detect": {
+        "median_ms": 191.175,
+        "mean_ms": 190.937,
+        "p95_ms": 195.611
+      },
+      "stage_inval": {
+        "median_ms": 2.511,
+        "mean_ms": 2.589,
+        "p95_ms": 4.253
+      },
+      "speedup_c3_vs_c1": 1.24,
+      "speedup_c4_vs_c1": 0.01
+    },
+    "peak_vram_mb": 802.6
+  },
+  {
+    "config_name": "50k Scene (1% Spatial Cluster)",
+    "scene_a_count": 50000,
+    "scene_b_count": 50000,
+    "classification": {
+      "gt_static": 49500,
+      "gt_modified": 500,
+      "gt_removed": 0,
+      "gt_added": 0,
+      "det_static": 49497,
+      "det_modified": 405,
+      "det_removed": 98,
+      "det_added": 98,
+      "static_recall": 0.9999,
+      "modified_recall": 0.81
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 70,
+      "clean_tiles": 954,
+      "dirty_percentage": 6.84,
+      "clean_percentage": 93.16,
+      "gt_changed_tiles": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 2.899,
+        "mean_ms": 2.917,
+        "p95_ms": 3.791
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 725.207,
+        "mean_ms": 728.825,
+        "p95_ms": 743.742
+      },
+      "c3_ref_incremental": {
+        "median_ms": 2.811,
+        "mean_ms": 2.858,
+        "p95_ms": 4.136
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 730.417,
+        "mean_ms": 732.529,
+        "p95_ms": 751.256
+      },
+      "stage_detect": {
+        "median_ms": 726.567,
+        "mean_ms": 727.74,
+        "p95_ms": 735.667
+      },
+      "stage_inval": {
+        "median_ms": 3.848,
+        "mean_ms": 3.857,
+        "p95_ms": 4.995
+      },
+      "speedup_c3_vs_c1": 1.03,
+      "speedup_c4_vs_c1": 0.0
+    },
+    "peak_vram_mb": 1574.89
+  },
+  {
+    "config_name": "100k Scene (1% Spatial Cluster)",
+    "scene_a_count": 100000,
+    "scene_b_count": 100000,
+    "classification": {
+      "gt_static": 99000,
+      "gt_modified": 1000,
+      "gt_removed": 0,
+      "gt_added": 0,
+      "det_static": 98991,
+      "det_modified": 823,
+      "det_removed": 186,
+      "det_added": 186,
+      "static_recall": 0.9999,
+      "modified_recall": 0.823
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 85,
+      "clean_tiles": 939,
+      "dirty_percentage": 8.3,
+      "clean_percentage": 91.7,
+      "gt_changed_tiles": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 3.002,
+        "mean_ms": 3.226,
+        "p95_ms": 4.543
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 2836.769,
+        "mean_ms": 2837.546,
+        "p95_ms": 2846.398
+      },
+      "c3_ref_incremental": {
+        "median_ms": 2.395,
+        "mean_ms": 2.36,
+        "p95_ms": 3.011
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 2840.243,
+        "mean_ms": 2842.333,
+        "p95_ms": 2855.105
+      },
+      "stage_detect": {
+        "median_ms": 2830.074,
+        "mean_ms": 2831.141,
+        "p95_ms": 2840.065
+      },
+      "stage_inval": {
+        "median_ms": 3.247,
+        "mean_ms": 3.164,
+        "p95_ms": 3.744
+      },
+      "speedup_c3_vs_c1": 1.25,
+      "speedup_c4_vs_c1": 0.0
+    },
+    "peak_vram_mb": 3121.18
+  },
+  {
+    "config_name": "100k Scene (5% Spatial Cluster)",
+    "scene_a_count": 100000,
+    "scene_b_count": 100000,
+    "classification": {
+      "gt_static": 95000,
+      "gt_modified": 5000,
+      "gt_removed": 0,
+      "gt_added": 0,
+      "det_static": 94992,
+      "det_modified": 4013,
+      "det_removed": 995,
+      "det_added": 995,
+      "static_recall": 0.9999,
+      "modified_recall": 0.8026
+    },
+    "tiles": {
+      "total_tiles": 1024,
+      "invalid_tiles": 150,
+      "clean_tiles": 874,
+      "dirty_percentage": 14.65,
+      "clean_percentage": 85.35,
+      "gt_changed_tiles": 0,
+      "false_negatives": 0,
+      "recall": 1.0,
+      "zero_false_negatives": true
+    },
+    "fidelity": {
+      "max_abs_error": 0.0,
+      "mse": 0.0,
+      "psnr_db": "inf",
+      "ssim": 1.0
+    },
+    "benchmarks": {
+      "c1_full_rerender": {
+        "median_ms": 4.038,
+        "mean_ms": 4.146,
+        "p95_ms": 5.31
+      },
+      "c2_detect_plus_full": {
+        "median_ms": 2844.812,
+        "mean_ms": 2846.664,
+        "p95_ms": 2856.054
+      },
+      "c3_ref_incremental": {
+        "median_ms": 2.452,
+        "mean_ms": 2.557,
+        "p95_ms": 4.098
+      },
+      "c4_detect_plus_incremental": {
+        "median_ms": 2849.641,
+        "mean_ms": 2853.802,
+        "p95_ms": 2871.615
+      },
+      "stage_detect": {
+        "median_ms": 2842.523,
+        "mean_ms": 2844.914,
+        "p95_ms": 2866.89
+      },
+      "stage_inval": {
+        "median_ms": 3.472,
+        "mean_ms": 3.608,
+        "p95_ms": 4.884
+      },
+      "speedup_c3_vs_c1": 1.65,
+      "speedup_c4_vs_c1": 0.0
+    },
+    "peak_vram_mb": 3132.21
+  }
+]
